@@ -33,7 +33,7 @@ const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars
     <section>
      <div className="home__cars-wrapper">
       {
-        allCars?.map((car,idx) => <CarCard key={idx} car={"car"} />)
+        allCars?.map((car,idx) => <CarCard key={idx} car={car} />)
       }
      </div>
     </section>
