@@ -7,6 +7,7 @@ import CustomButton from "./CustomButton";
 import rightIcon from '@/public/right-arrow.svg'
 import { calculateCarRent } from "@/utils";
 import { CarProps } from "@/Types";
+import { CarDetails } from ".";
 
 interface CarCardProps {
   car: CarProps;
@@ -66,7 +67,7 @@ const CarCard = ({ car }: CarCardProps) => {
         </div>
       </div>
 
- 
+ <CarDetails isOpen={isOpen} closeModal={()=> setIsOpen(false)} car={car} />
     </div>
   );
 };
