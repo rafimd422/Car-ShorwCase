@@ -14,6 +14,14 @@ export interface SearchManufacturer {
   manufacturer: string;
   setManufacturer: (manufacturer: string) => void;
 }
+export interface FilterProps {
+    manufacturer:string,
+    year: number,
+    fuel: string,
+    limit: number,
+    model: string ,
+  }
+
 export interface CarProps {
   city_mpg: number;
   class: string;
