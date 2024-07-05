@@ -1,8 +1,7 @@
 "use client";
 
-import { CustomButtonProps } from "@/Types";
 import Image from "next/image";
-
+import { CustomButtonProps } from "@/Types";
 
 const Button = ({ isDisabled, btnType, containerStyles, textStyles, title, rightIcon, handleClick }: CustomButtonProps) => (
   <button
